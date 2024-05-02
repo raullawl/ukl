@@ -18,8 +18,8 @@
 
         <ul class="navmenu">
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Me</a></li>
-            <li><a href="mai projek.php">My Project</a></li>
+            <li><a href="about.php">Kuliner</a></li>
+            <li><a href="mai projek.php">Pariwisata</a></li>
 
         </ul>
 

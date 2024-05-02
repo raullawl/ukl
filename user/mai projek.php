@@ -18,8 +18,8 @@
 
         <ul class="navmenu">
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Me</a></li>
-            <li><a href="mai projek.php">My Project</a></li>
+            <li><a href="about.php">Kuliner</a></li>
+            <li><a href="mai projek.php">Pariwisata</a></li>
 
         </ul>
 
@@ -38,39 +38,59 @@
             <h2>Gunung Ijen</h2>
             <p>Gunung Ijen adalah sebuah gunung berapi yang terletak di perbatasan Kabupaten Banyuwangi dan Kabupaten Bondowoso, Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.386 mdpl. Gunung Ijen terakhir meletus pada tahun 1999. Salah satu fenomena alam yang paling terkenal dari Gunung Ijen adalah blue fire (api biru) di dalam kawah yang terletak di puncak gunung tersebut. Pendakian gunung ini bisa dimulai dari dua tempat, yakni dari Banyuwangi atau dari Bondowoso.</p>
             </div>
-            <br>
-            <br>
-            <div class="teks2">
-            <h2>Telur Petis</h2>
-            <p>Telur petis salah satu makanan khas dari Banyuwangi, telur diberi bumbu petis yang sudah dicampur bumbu rempah. Telur petis dibuat dengan bumbu seperti bawang putih, bawang merah, daun jeruk, cabai merah rawit, kencur, temu kunci, jahe, santan, dan garam. Telur petis cocok dimakan bersama lontong dan sayur lodeh, bisa untuk sajian lebaran ketupat di rumah. Simak resep telur petis lauk pendamping lontong sayur.</p>
-            </div>
+            <div class="home-img2">
+            <img id="home-img2" src="ASET/333.jpg"alt="">
+        </div>
             <br>
             <br>
             <div class="teks3">
             <h2>Pantai Pulau Merah</h2>
             <p>Pulau Merah atau Pulo Merah ( Red Island dalam Bahasa Inggris) adalah objek wisata pantai yang terletak di Kecamatan Pesanggaran, Kabupaten Banyuwangi, Provinsi Jawa Timur. Di pantai ini terdapat sebuah bukit hijau kecil dengan tanah berwarna merah yang terletak di dekat bibir pantai. Bukit tersebut dapat dikunjungi dengan berjalan kaki saat air laut surut.[1] Di Pulau Merah terdapat Pura yang digunakan pemeluk agama Hindu melaksanakan ibadah ataupun upacara Mekiyis. Kawasan wisata ini dikelola oleh Perum Perhutani Unit II Jawa Timur, KPH Banyuwangi Selatan.</p>
             </div>
+            <div class="home-img4">
+            <img id="home-img4" src="ASET/Sunset di Pulau Merah.jpeg" alt="">
+        </div>
             <br>
             <br>
             <div class="teks4">
-            <h2>Sego Tempong</h2>
-            <p>Nasi tempong atau sego tempong adalah makanan khas Kabupaten Banyuwangi berupa kumpulan sayuran yang sudah direbus seperti bayam, kenikir dan daun kemangi serta lauk tahu, tempe, bakwan jagung goreng, juga ikan jambal goreng tepung. Nasi ini kemudian disiram dengan sambal kacang. Ciri khasnya adalah bau kencur kuat dari sambalnya. Namun, ada pula yang menggunakan sambal terasi pedas</p>
+                <h2>Pulau Tabuhan</h2>
+                <p>Wisata Banyuwangi yang satu ini cocok bagi Anda yang mencari ketenangan. Sebab, Pulau Tabuhan merupakan pulau tak berpenghuni dengan hamparan pasir putih dan jernihnya laut biru. 
+
+Meski berukuran kecil, Pulau Tabuhan memiliki kekayaan bawah laut yang menakjubkan. Pulau ini merupakan satu-satunya destinasi wisata Banyuwangi yang ideal untuk melakukan selancar layang (kiteboarding). 
+
+Pulau Tabuhan berjarak 3 km dari daratan yang rata-rata bisa ditempuh dalam waktu sekitar 30 menit menggunakan perahu nelayan. Anda bisa menyewa perahu nelayan dari Pantai Grand Watu Dodol, Bangsring Underwater, atau Pantai Kampe dengan biaya sekitar Rp 600.000 untuk maksimal 10 orang.</p>
+            <img id="home-img8" src="ASET/tabuhan.jpg" alt="">
             </div>
             <br>
+            <br>
+            <div class="teks4">
+            <h2>De Djawatan</h2>
+            <p>Butuh tempat healing untuk menyegarkan pikiran? De Djawatan bisa Anda masukkan ke dalam daftar destinasi wisata Banyuwangi yang berikutnya. Rindangnya pepohonan yang disebut-sebut mirip dengan hutan Fangorn dalam film Lord of The Rings ini akan menyambut Anda begitu tiba di sana.
+
+De Djawatan merupakan kawasan hutan lindung yang dimiliki oleh Perhutani. Tempat wisata Banyuwangi ini memiliki pemandangan yang menyejukkan mata dengan udara sejuk. Tidak heran jika para pengunjung betah berburu foto di sana, karena tempatnya yang memiliki nilai estetik.
+
+Tempat wisata Banyuwangi ini buka mulai pukul 08.00-17.00 WIB. Bagi Anda yang ingin berkunjung ke De Djawatan cukup membayar tiket masuk sekitar Rp 6.000 per orang. Jika membawa kendaraan, Anda akan dikenakan biaya parkir sekitar Rp 2.000 untuk kendaraan roda dua dan Rp 5.000 untuk kendaraan roda empat.</p>
+            <img id="home-img9" src="ASET/jawatan.jpg" alt="">
+            </div>
+            <br>
+            <br>
+            <div class="teks4">
+                <h2>Teluk Hijau</h2>
+                <p>Terletak di Desa Sarongan, Teluk Hijau merupakan salah satu surga tersembunyi yang dimiliki oleh Banyuwangi. Destinasi wisata Banyuwangi ini masih masuk dalam kawasan Taman Nasional Meru Betiri.
+
+Saat tiba di sana, Anda akan disambut dengan hamparan pasir pantai yang putih dengan pemandangan jernihnya air laut berwarna hijau kebiruan. Ada pula karang-karang di tepian pantainya yang semakin menambah daya tarik Teluk Hijau.
+
+Untuk bisa menikmati keindahan Teluk Hijau, Anda harus menempuh perjalanan kurang lebih 3-4 jam dari pusat kota Banyuwangi. Sebab, akses jalan menuju Teluk Hijau melalui jalur darat cukup sulit untuk dilalui.
+
+Namun, perjalanan sulit yang Anda tempuh akan terbayar begitu melihat keindahan Teluk Hijau. Dengan membayar tiket masuk sekitar Rp 7.500 per orang, Anda bisa menikmati suasana pantai yang jauh dari perkotaan.</p>
+            <img id="home-img10" src="ASET/telukhijau.jpg" alt="">
+            </div>
+
+            
         </div>
 
-        <div class="home-img2">
-            <img src="ASET/333.jpg" alt="">
-        </div>
-        <div class="home-img3">
-            <img src="ASET/Telur Bumbu Petis.jpeg" alt="">
-        </div>
-        <div class="home-img4">
-            <img src="ASET/Sunset di Pulau Merah.jpeg" alt="">
-        </div>
-        <div class="home-img5">
-            <img src="ASET/segoo.jpeg" alt="">
-        </div>
+        
+        
     </section>
 
     <script src="java.js"></script>
