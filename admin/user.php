@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman data USER</title>
     <link rel="icon" type="image/png" href="img/logotitle.png">
-    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="styleadmin1.css">
 </head>
 <body>
+<div class="navbar">
+        <a href="user.php" class="logo">MyWebsite</a>
+        <a href="tabelkuliner.php">Tabel Kuliner</a>
+        <a href="tabelpariwisata.php">Tabel Pariwisata</a>
+    </div>
+    
     <section class="user">
     <h1 class="heading">Data User</h1>
     <br>
