@@ -12,6 +12,7 @@
         <a href="user.php" class="logo">MyWebsite</a>
         <a href="tabelkuliner.php">Tabel Kuliner</a>
         <a href="tabelpariwisata.php">Tabel Pariwisata</a>
+        <a href="tabelcomment.php">Tabel Komen</a>
     </div>
 
     <section class="user">
@@ -23,7 +24,6 @@
         <table border="1" class="table">
             <tr>
                 <th>Nomer</th>
-                <th>Id Pariwisata</th>
                 <th>Nama Pariwisata</th>
                 <th>Alamat Pariwisata</th>
                 <th>Harga tiket Pariwisata</th>
@@ -40,7 +40,6 @@
             ?>
             <tr>
                 <td><?php echo $nomor++; ?></td>
-                <td><?php echo $data['id_pariwisata']; ?></td>
                 <td><?php echo $data['nama_pariwisata']; ?></td>
                 <td><?php echo $data['alamat_pariwisata']; ?></td>
                 <td><?php echo $data['harga_tiket_pariwisata']; ?></td>

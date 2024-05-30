@@ -1,0 +1,119 @@
+/* komentar.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logo button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f0e68c;
+}
+
+.comments {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.comment h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #28a745;
+}
+
+.comment p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

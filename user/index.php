@@ -20,7 +20,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">Kuliner</a></li>
             <li><a href="mai projek.php">Pariwisata</a></li>
-            <li><a href="masukan.php">Masukan</a></li>
+            <li><a href="komentar.php">Komentar</a></li>
 
         </ul>
 
@@ -38,13 +38,15 @@
 
             <div class="main-btn">
                 <a href="https://id.wikipedia.org/wiki/Kabupaten_Banyuwangi" class="btn1">Visit Now</a>
-                <a href="https://www.youtube.com/watch?v=gCaTo5OXD7o" class="btn2"><span><i class='bx bx-play'></i></span>
-                Watch Video</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="ASET/banyuwangi.jpg" alt="">
+            <br>
+            <br>
+            <br>
+            <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gCaTo5OXD7o?si=uvlE4mvKti6kyaeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 

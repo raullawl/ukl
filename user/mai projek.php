@@ -20,7 +20,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">Kuliner</a></li>
             <li><a href="mai projek.php">Pariwisata</a></li>
-            <li><a href="masukan.php">Masukan</a></li>
+            <li><a href="komentar.php">Komentar</a></li>
 
 
         </ul>

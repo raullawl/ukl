@@ -12,6 +12,8 @@
         <a href="user.php" class="logo">MyWebsite</a>
         <a href="tabelkuliner.php">Tabel Kuliner</a>
         <a href="tabelpariwisata.php">Tabel Pariwisata</a>
+        <a href="tabelcomment.php">Tabel Komen</a>
+
     </div>
     
     <section class="user">
@@ -23,7 +25,6 @@
         <table border="1" class="table">
             <tr>
                 <th>Nomer</th>
-                <th>Id_User</th>
                 <th>Username</th>
                 <th>Password</th>
                 <th>Email</th>
@@ -39,7 +40,6 @@
             ?>
             <tr>
                 <td><?php echo $nomor++; ?></td>
-                <td><?php echo $data['id_user']; ?></td>
                 <td><?php echo $data['username']; ?></td>
                 <td><?php echo $data['password']; ?></td>
                 <td><?php echo $data['email']; ?></td>
