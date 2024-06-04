@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman data KOMENTAR</title>
     <link rel="icon" type="image/png" href="img/logotitle.png">
-    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="styleadmin2.css">
 </head>
 <body>
     <header>

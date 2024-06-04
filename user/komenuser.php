@@ -1,40 +1,62 @@
+<?php
+session_start();
+
+// Cek apakah user sudah login
+if (!isset($_SESSION['username'])) {
+    header("Location: ../index.php");
+    exit;
+}
+
+// Include file koneksi untuk menghubungkan ke database
+include '../koneksi.php';
+
+// Query untuk mengambil data komentar bersama dengan nama kuliner dan pariwisata
+$query_mysql = mysqli_query($mysqli, "
+    SELECT komentar.username, komentar.isi_komentar, 
+           kuliner.nama_kuliner, pariwisata.nama_pariwisata
+    FROM komentar
+    LEFT JOIN kuliner ON komentar.id_kuliner = kuliner.id_kuliner
+    LEFT JOIN pariwisata ON komentar.id_pariwisata = pariwisata.id_pariwisata
+") or die(mysqli_error($mysqli));
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="comment-form.css">
+    <title>Halaman Komentar</title>
+    <link rel="stylesheet" href="komentar2.css">
 </head>
 <body>
-    <div class="comment-box">
-        <h2>Comments</h2>
-        <form action="komenuser.php" method="post">
-            <input type="text" name="username" placeholder="Username">
-            <input type="text" name="email" placeholder="Email">
-            <textarea name="isi_komentar" placeholder="Type Your Comment"></textarea>
-            <button type="submit" name="submit">Submit Comment</button>
-            <!-- php komen -->
-            <?php
-            //check if form submitted, insert form data into users table.
-            if(isset($_POST['submit'])){
-                $username = $_POST['username'];
-                $email = $_POST['email'];
-                $isi_komentar = $_POST['isi_komentar'];
-                //echo($judul);
-                //include database connection file
-                include_once("../koneksi.php");
-                
-                //insert user data table
-                $result = mysqli_query($mysqli,
-                "INSERT INTO komentar(username,email,isi_komentar) VALUES('$username','$email','$isi_komentar')");
-
-                //show message when user added
-                //echo "Data added successfully. <a href='index.php'>View data</a>
-                header("location:komentar.php");
-            }
-            ?> 
-        </form>
-    </div>
+    <header>
+        <a href="komentar.php" class="logo">
+            <button>Berikan Komentar</button>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="index.php">Home</a></li>
+        </ul>
+    </header>
+    <section class="comments">
+        <h1 class="heading">Komentar Pengguna</h1>
+        <div class="comment-list">
+            <?php while($data = mysqli_fetch_array($query_mysql)) { ?>
+            <div class="comment">
+                <h3><?php echo htmlspecialchars($data['username']); ?></h3>
+                <p><?php echo htmlspecialchars($data['isi_komentar']); ?></p>
+                <?php if (!empty($data['nama_kuliner'])): ?>
+                    <p><strong>Kuliner:</strong> <?php echo htmlspecialchars($data['nama_kuliner']); ?></p>
+                <?php endif; ?>
+                <?php if (!empty($data['nama_pariwisata'])): ?>
+                    <p><strong>Pariwisata:</strong> <?php echo htmlspecialchars($data['nama_pariwisata']); ?></p>
+                <?php endif; ?>
+            </div>
+            <?php } ?>
+        </div>
+    </section>
+    <footer>
+        <!-- Footer Content -->
+    </footer>
 </body>
 </html>

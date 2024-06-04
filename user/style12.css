@@ -340,6 +340,21 @@ body {
 header, section {
     padding: 20px;
 }
+.artikel .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.artikel .btn:hover {
+    background-color: #555;
+}
+
 
 /* Home Section */
 .home {

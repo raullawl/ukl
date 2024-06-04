@@ -1,0 +1,143 @@
+/* komentar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #000000; /* Teks hitam */
+    font-size: 16px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #ffffff;
+}
+
+header .logo button:hover {
+    background-color: #333333;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar li {
+    margin-left: 20px;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: #000000; /* Teks hitam */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #4CAF50;
+}
+
+.comments {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.comments .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.comment-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.comment {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.comment:hover {
+    transform: translateY(-5px);
+}
+
+.comment h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.comment p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #000000; /* Teks hitam */
+}
+
+.comment p strong {
+    color: #000000; /* Teks hitam */
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000; /* Teks hitam */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    header .navbar {
+        display: flex;
+    }
+    .comment-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .comment-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.comment h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #000000; /* Teks hitam */
+}
+
+.comment p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #000000; /* Teks hitam */
+}

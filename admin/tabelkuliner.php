@@ -27,8 +27,10 @@
                 <th>Nama kuliner</th>
                 <th>Deskripsi</th>
                 <th>Gambar</th>
+                <th>Harga</th>
                 <th>Kelola</th>
                 <th>Kelola</th>
+                
             </tr>
             <?php
             include '../koneksi.php';
@@ -41,6 +43,7 @@
                 <td><?php echo $data['nama_kuliner']; ?></td>
                 <td><?php echo $data['deskripsi']; ?></td>
                 <td class="image-col"><img src="uploaded_img/<?php echo $data["gambar"]; ?>" alt="Gambar Ikan" width="100"></td>
+                <td><?php echo $data['harga_kuliner']; ?></td>
                 <td><a href="hapuskuliner.php?id=<?php echo $data['id_kuliner']; ?>" class="btn-hapus">Hapus</a> <!-- Tombol hapus --></td>
                 <td><a href="updatekuliner.php?id=<?php echo $data['id_kuliner']; ?>" class="btn-update">Update</a> <!-- Tombol update --></td>
             </tr>
@@ -53,5 +56,7 @@
     
 
     <script src="main.js"></script>
+    
+
 </body>
 </html>

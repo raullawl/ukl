@@ -18,22 +18,17 @@ $query_user = "SELECT username, email FROM user WHERE username = '$username'";
 $result_user = mysqli_query($mysqli, $query_user);
 $data_user = mysqli_fetch_assoc($result_user);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pariwisata dan Kuliner</title>
-    <link rel="stylesheet" href="style12.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Profil Pengguna</title>
+    <link rel="stylesheet" href="style10.css"> <!-- Anda bisa menyesuaikan dengan stylesheet Anda -->
 </head>
 <body>
-
-    <header>
+<header>
         <a href="#" class="logo"><img src="ASET/Sunrise_and_sunset_at_beach__vector-removebg-preview.png" alt=""></a>
 
         <ul class="navmenu">
@@ -51,26 +46,20 @@ $data_user = mysqli_fetch_assoc($result_user);
         </div>
     </header>
 
-    <!--home-section-->
-    <section class="home">
-        <?php
-        include '../koneksi.php';
-        $query_mysql = mysqli_query($mysqli, "SELECT * FROM pariwisata") or die(mysqli_error($mysqli));
-        while($data = mysqli_fetch_array($query_mysql)) {
-        ?>
-        <div class="artikel">
-            <h1><?php echo $data['nama_pariwisata'] ?></h1>
-            <p><?php echo $data['deskripsi'] ?></p>
-            <p>Harga: Rp <?php echo number_format($data['harga_pariwisata'], 0, ',', '.') ?></p>
-            <img src="../admin/uploaded_img/<?php echo $data['gambar'] ?>" alt="Gambar" width="200">
-            <a href="komentar.php?id= <?php echo $data['id_pariwisata']; ?>" class="btn">Tambah komentar</a>
-            <a href="transaksi.php" class="btn">Beli</a>
-        </div>
-       <?php } ?>
-    </section>
 
-    <script src="java.js"></script>
     
+    <section class="profil-container">
+    <h1>Profil Pengguna</h1><br>
+    <div class="profil-box">
+        <div class="profil-info">
+            <p>Username: <?php echo $data_user['username']; ?></p>
+            <p>Email: <?php echo $data_user['email']; ?></p>
+            <!-- Anda dapat menambahkan informasi pengguna lainnya di sini -->
+        </div>
+    </div>
+</section>
+
+
     <!-- Footer Section -->
     <footer>
         <div class="footer-container">
@@ -86,8 +75,6 @@ $data_user = mysqli_fetch_assoc($result_user);
                         <li><a href="about.php">Kuliner</a></li>
                         <li><a href="mai projek.php">Pariwisata</a></li>
                         <li><a href="komenuser.php">Komentar</a></li>
-                        <li><a href="profil.php">profil</a></li>
-
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -103,6 +90,5 @@ $data_user = mysqli_fetch_assoc($result_user);
         </div>
     </footer>
 
-    <script src="java.js"></script>
 </body>
 </html>
