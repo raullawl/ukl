@@ -28,29 +28,29 @@ if (mysqli_num_rows($result) > 0) {
     exit;
 }
 
-// Periksa apakah id_kuliner sudah diset di URL
-if(isset($_GET['id_kuliner'])) {
-    $id_kuliner = $_GET['id_kuliner'];
-    $query_kuliner = "SELECT * FROM kuliner WHERE id_kuliner='$id_kuliner'";
-    $result_kuliner = mysqli_query($mysqli, $query_kuliner);
+// Periksa apakah id_pariwisata sudah diset di URL
+if(isset($_GET['id_pariwisata'])) {
+    $id_pariwisata = $_GET['id_pariwisata'];
+    $query_pariwisata = "SELECT * FROM pariwisata WHERE id_pariwisata='$id_pariwisata'";
+    $result_pariwisata = mysqli_query($mysqli, $query_pariwisata);
 
-    // Periksa apakah data kuliner ditemukan
-    if(mysqli_num_rows($result_kuliner) > 0) {
-        $kuliner_data = mysqli_fetch_assoc($result_kuliner);
+    // Periksa apakah data pariwisata ditemukan
+    if(mysqli_num_rows($result_pariwisata) > 0) {
+        $pariwisata_data = mysqli_fetch_assoc($result_pariwisata);
     } else {
-        echo "Data kuliner tidak ditemukan.";
+        echo "Data pariwisata tidak ditemukan.";
         exit;
     }
 } else {
-    echo "ID Kuliner tidak tersedia.";
+    echo "ID Pariwisata tidak tersedia.";
     exit;
 }
 
 if(isset($_POST['submit'])){
     $jumlah = $_POST['jumlah'];
-    $query_insert = "INSERT INTO transaksi (id_user, id_kuliner, jumlah) VALUES ('$id_user', '$id_kuliner', '$jumlah')";
+    $query_insert = "INSERT INTO transaksi2 (id_user, id_pariwisata, jumlah) VALUES ('$id_user', '$id_pariwisata', '$jumlah')";
     if(mysqli_query($mysqli, $query_insert)){
-        header("Location: transaksi_berhasil.php");
+        header("Location: transaksi_berhasil2.php");
     } else {
         echo "Error: " . mysqli_error($mysqli);
     }
@@ -62,22 +62,22 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaksi Kuliner</title>
+    <title>Transaksi Pariwisata</title>
     <link rel="stylesheet" href="style13.css">
 </head>
 <body>
 
 <div class="container">
-    <h2>Transaksi Kuliner</h2>
+    <h2>Transaksi Pariwisata</h2>
     <div class="product-details">
-        <h3><?php echo $kuliner_data['nama_kuliner']; ?></h3>
-        <p><?php echo $kuliner_data['deskripsi']; ?></p>
-        <p>Harga: Rp <?php echo number_format($kuliner_data['harga_kuliner'], 0, ',', '.'); ?></p>
+        <h3><?php echo $pariwisata_data['nama_pariwisata']; ?></h3>
+        <p><?php echo $pariwisata_data['deskripsi']; ?></p>
+        <p>Harga: Rp <?php echo number_format($pariwisata_data['harga_pariwisata'], 0, ',', '.'); ?></p>
     </div>
     <div class="purchase-form">
         <form method="post">
             <input type="hidden" name="id_user" value="<?php echo $id_user; ?>">
-            <input type="hidden" name="id_kuliner" value="<?php echo $id_kuliner; ?>">
+            <input type="hidden" name="id_pariwisata" value="<?php echo $id_pariwisata; ?>">
             <label for="jumlah">Jumlah:</label>
             <input type="number" name="jumlah" id="jumlah" required>
             <button type="submit" name="submit" class="button">Konfirmasi Pembelian</button>

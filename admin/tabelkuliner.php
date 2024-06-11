@@ -13,6 +13,7 @@
         <a href="tabelkuliner.php">Tabel Kuliner</a>
         <a href="tabelpariwisata.php">Tabel Pariwisata</a>
         <a href="tabelcomment.php">Tabel Komen</a>
+        <a href="tabeltransaksi.php">Tabel Transaksi</a>
     </div>
 
     <section class="user">

@@ -13,4 +13,4 @@ if($hapus) {
 } else {
     echo "Gagal menghapus data pariwisata.";
 }
-?>
+?>hghewk,   

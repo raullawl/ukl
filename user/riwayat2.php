@@ -29,21 +29,21 @@ if (mysqli_num_rows($result_user) > 0) {
 }
 
 // Query untuk mendapatkan data riwayat transaksi untuk user ini
-$query_riwayat = "SELECT t.id_transaksi, t.jumlah, k.nama_kuliner, k.harga_kuliner
-                  FROM transaksi t
-                  JOIN kuliner k ON t.id_kuliner = k.id_kuliner
+$query_riwayat2 = "SELECT t.id_transaksi2, t.jumlah, k.nama_pariwisata, k.harga_pariwisata
+                  FROM transaksi2 t
+                  JOIN pariwisata k ON t.id_pariwisata = k.id_pariwisata
                   WHERE t.id_user='$id_user'
-                  ORDER BY t.id_transaksi DESC";
-$result_riwayat = mysqli_query($mysqli, $query_riwayat);
+                  ORDER BY t.id_transaksi2 DESC";
+$result_riwayat2 = mysqli_query($mysqli, $query_riwayat2);
 
 // Periksa apakah data transaksi ditemukan
-if (mysqli_num_rows($result_riwayat) > 0) {
-    $riwayat = [];
-    while ($row = mysqli_fetch_assoc($result_riwayat)) {
-        $riwayat[] = $row;
+if (mysqli_num_rows($result_riwayat2) > 0) {
+    $riwayat2 = [];
+    while ($row = mysqli_fetch_assoc($result_riwayat2)) {
+        $riwayat2[] = $row;
     }
 } else {
-    $riwayat = [];
+    $riwayat2 = [];
 }
 ?>
 
@@ -63,11 +63,11 @@ if (mysqli_num_rows($result_riwayat) > 0) {
         <div class="card-container">
             <?php foreach ($riwayat as $item): ?>
                 <div class="card">
-                    <h3><?php echo htmlspecialchars($item['nama_kuliner']); ?></h3>
-                    <p><strong>Nomer Transaksi:</strong> <?php echo htmlspecialchars($item['id_transaksi']); ?></p>
-                    <p><strong>Harga per pcs:</strong> Rp <?php echo number_format($item['harga_kuliner'], 0, ',', '.'); ?></p>
+                    <h3><?php echo htmlspecialchars($item['nama_pariwisata']); ?></h3>
+                    <p><strong>Nomer Transaksi:</strong> <?php echo htmlspecialchars($item['id_transaksi2']); ?></p>
+                    <p><strong>Harga per pcs:</strong> Rp <?php echo number_format($item['harga_pariwisata'], 0, ',', '.'); ?></p>
                     <p><strong>Jumlah:</strong> <?php echo htmlspecialchars($item['jumlah']); ?></p>
-                    <p><strong>Total Harga:</strong> Rp <?php echo number_format($item['harga_kuliner'] * $item['jumlah'], 0, ',', '.'); ?></p>
+                    <p><strong>Total Harga:</strong> Rp <?php echo number_format($item['harga_pariwisata'] * $item['jumlah'], 0, ',', '.'); ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

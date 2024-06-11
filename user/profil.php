@@ -37,6 +37,7 @@ $data_user = mysqli_fetch_assoc($result_user);
             <li><a href="mai projek.php">Pariwisata</a></li>
             <li><a href="komenuser.php">Komentar</a></li>
             <li><a href="profil.php">profil</a></li>
+            <li><a href="riwayat.php">Riwayat</a></li>
 
         </ul>
 

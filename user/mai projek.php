@@ -42,6 +42,7 @@ $data_user = mysqli_fetch_assoc($result_user);
             <li><a href="mai projek.php">Pariwisata</a></li>
             <li><a href="komenuser.php">Komentar</a></li>
             <li><a href="profil.php">profil</a></li>
+            <li><a href="riwayat.php">Riwayat</a></li>
 
         </ul>
 
@@ -64,7 +65,6 @@ $data_user = mysqli_fetch_assoc($result_user);
             <p>Harga: Rp <?php echo number_format($data['harga_pariwisata'], 0, ',', '.') ?></p>
             <img src="../admin/uploaded_img/<?php echo $data['gambar'] ?>" alt="Gambar" width="200">
             <a href="komentar.php?id= <?php echo $data['id_pariwisata']; ?>" class="btn">Tambah komentar</a>
-            <a href="transaksi.php" class="btn">Beli</a>
         </div>
        <?php } ?>
     </section>
@@ -87,6 +87,7 @@ $data_user = mysqli_fetch_assoc($result_user);
                         <li><a href="mai projek.php">Pariwisata</a></li>
                         <li><a href="komenuser.php">Komentar</a></li>
                         <li><a href="profil.php">profil</a></li>
+                        <li><a href="riwayat.php">Riwayat</a></li>
 
                     </ul>
                 </div>

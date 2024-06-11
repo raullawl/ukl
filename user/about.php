@@ -35,7 +35,7 @@ if (mysqli_num_rows($result) > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pariwisata dan Kuliner</title>
-    <link rel="stylesheet" href="style11.css">
+    <link rel="stylesheet" href="style12.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -51,6 +51,7 @@ if (mysqli_num_rows($result) > 0) {
             <li><a href="mai projek.php">Pariwisata</a></li>
             <li><a href="komenuser.php">Komentar</a></li>
             <li><a href="profil.php">Profil</a></li>
+            <li><a href="riwayat.php">Riwayat</a></li>
         </ul>
 
         <div class="nav-icon">
@@ -72,7 +73,7 @@ if (mysqli_num_rows($result) > 0) {
             <p>Harga: Rp <?php echo number_format($data['harga_kuliner'], 0, ',', '.') ?></p>
             <img src="../admin/uploaded_img/<?php echo $data['gambar'] ?>" alt="Gambar" width="200">
             <a href="komentar.php?id=<?php echo $data['id_kuliner']; ?>" class="btn">Tambah Komentar</a>
-            <a href="transaksi.php" class="btn">Beli</a>
+            <a href="transaksi.php?id_kuliner=<?php echo $data['id_kuliner']; ?>" class="btn">Beli</a>
         </div>
         <?php } ?>
     </section>
@@ -92,6 +93,7 @@ if (mysqli_num_rows($result) > 0) {
                         <li><a href="about.php">Kuliner</a></li>
                         <li><a href="mai projek.php">Pariwisata</a></li>
                         <li><a href="komenuser.php">Komentar</a></li>
+                        <li><a href="riwayat.php">Riwayat</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
